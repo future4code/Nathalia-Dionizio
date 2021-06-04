@@ -1,136 +1,100 @@
-// Exercicio 1
+//EXERCICIO DE INTERPRETAÇÃO DE CODIGO
 
-const bool1 = true
-const bool2 = false
-const bool3 = !bool2
+//1)a) O que vai ser impresso no console?
+// console.log -> matheus nachtergaele
+// console.log -> imprimi todo o elenco dentro do array
+// console.log -> 41 (Imprimi numero de caracteres do elenco menos o ultimo)
+// console.log -> globo, horario: 14hr
 
-//Primeiro comando
+//2)a) O que vai ser impresso no console?
+// connsole.log JUCA
+// connsole.log JUBA (substitui juca por juba)
+// connsole.log GOTO (troca a por o)
 
-let resultado = bool1 && bool2
-console.log("a.", resultado)
+//2)B) trocar o nome do objeto
 
-//a = false, Para o operador && todos os boleanos devem ser verdadeiros
+//3)a) O que vai ser impresso no console?
+// falso
+// indefined
 
-//Segundo comando
+//3)b) Explique o valor impresso no console. Você sabe por que isso aconteceu?
+// backender está definido como falso e altura não foi definida
 
-let resultado2 = bool1 && bool2 && bool3
-console.log("b.", resultado2)
+//                EXERCICIOS DE ESCRITA DE CODIGO
 
-//b= false, Para o operador && todos os boleanos devem ser verdadeiros bool3 = !bool2 (boleano false)
+//1)a) Crie um objeto. Ele deve conter duas propriedades: nome (string) e apelidos (um array que sempre terá exatamente três apelidos). 
+//Depois, escreva uma função que recebe como entrada um objeto e imprime uma mensagem no modelo abaixo: 
+//"Eu sou Amanda, mas pode me chamar de: Amandinha, Mandinha ou Mandi"
 
-//Terceiro comando
+const dados = {
+nome: "Nathalia",
+sobre:["nati", "tata", "nana"]
+}
+console.log(`Eu sou ${dados.nome}, mas pode me chamar de: ${dados.sobre[0]}, ${dados.sobre[1]} ou ${dados.sobre[2]}`)
 
-let resultado3 = !resultado2 && (bool1 || bool2)
-console.log("c.", resultado3)
 
-//c= true
-// let resultado3 = true && true C= true
+//1)b) Agora, usando o operador spread, crie um novo objeto mantendo o valor da propriedade nome, 
+//mas com uma nova lista de três apelidos. Depois, chame a função feita no item anterior passando como argumento o novo objeto
 
-//Quarto comando (não entendi) D = INDEFINIDO????
 
-//Exercicio 2
 
-/*let primeiroNumero = prompt("digite um numero!")
-let segundoNumero = prompt("digite outro numero!")
-const soma = primeiroNumero + segundoNumero
-console.log(soma)*/
 
-//Solicitou que atribuisse valor numerico (já que estamos trabalhando com boleanos)
+//           voltar pra tentar fazer
 
-//Exercicio 3
 
-//Usaria number antes do prompt para atribuir como valor.
 
-//Exercicios de escrita de código
 
-//1 a)Pergunte a idade do usuário = 25 anos
 
-let idadeDoUsuario = Number(prompt("Qual a sua idade?"))
-console.log(idadeDoUsuario)
 
-// b) Pergunte a idade do seu melhor amigo ou da sua melhor amiga = 26 anos
+//2a) Crie dois objetos diferentes com as seguintes propriedades: nome, idade e profissão. 
 
-let idadeMelhorAmiga = Number(prompt("Qual a idade da melhor amiga?"))
-console.log(idadeMelhorAmiga)
+const pessoa1 = {
+    nome: "Fabiana",
+    idade: 25,
+    profissao: "Médica",
+}
+const pessoa2 = {
+    nome: "Zé",
+    idade: 27,
+    profissao: "Professor", 
+}
 
-//c) Imprima na console a seguinte mensagem: "Sua idade é maior do que a do seu melhor amigo?", seguido pela resposta (true ou false)
+//b) Escreva uma função que receba esses objetos e retorne um array com as seguintes informações:
+// valor de nome    o número de caracteres do valor nome   o valor de idade   o valor de profissão     o número de caracteres do valor profissao
 
-let diferenca = idadeDoUsuario - idadeMelhorAmiga
-console.log(diferenca)
+function imprimirPessoas(pessoa1, pessoa2) {
+    const retornarArray = [imprimirPessoas]
+}
+console.log(`${pessoa1.nome}, numero de caracteres do nome: ${pessoa1.nome.length}, idade: ${pessoa1.idade}; profissão: ${pessoa1.profissao}, numero de caracteres de profissão: ${pessoa1.profissao.length}, ${pessoa2.nome}, numero de caracteres do nome: ${pessoa2.nome.length}, idade: ${pessoa2.idade}; profissão: ${pessoa2.profissao}, numero de caracteres da profissão: ${pessoa2.profissao.length}`)
 
-let minhaIdadeEmaior = idadeDoUsuario > idadeMelhorAmiga
-console.log(minhaIdadeEmaior)
+//3A)Crie uma variável de escopo global que guarde um array vazio chamada carrinho
 
-// 25 - 26 = -1 (false)
 
-// 2 a) Peça ao usuário que insira um número par
 
-let numeroPar = Number(prompt("Insira um numero par"))
-console.log(numeroPar)
+// voltar para fazer
 
-//b) Imprima na console o resto da divisão desse número por 2
 
-const restoDaDivisao = numeroPar / 2
-console.log(restoDaDivisao)
 
-//c) Teste o programa com diversos números pares. Você notou um padrão? Escreva em um comentário de código.
-// Como não existe resto de divisão, informa o número do quociente.
+//b)Crie três novos objetos que representem frutas de um sacolão. Eles devem ter as seguintes propriedades: nome e disponibilidade(boolean) - devem começar como true
 
-//d) O que acontece se o usuário inserir um número ímpar? Escreva em um comentário de código
+const fruta1 = {
+    nome: "maça",
+    disponibilidade: true
+}
 
-//O resultado vem com o resto da divisão
+const fruta2 = {
+    nome: "pêra",
+    disponibilidade: true
+}
 
-//3 Faça um programa que pergunte ao usuário sua idade em anos. Depois, imprima no console
-//a) A idade do usuário em meses b) A idade do usuário em dias c) A idade do usuário em horas
+const fruta3 = {
+    nome: "mamão",
+    disponibilidade: true
+}
 
-/*let idade = Number(prompt("Qual a sua idade?", "Exemplo 18 anos"))
-console.log = idade
+//C)Crie uma função que receba um objeto fruta por parâmetro e coloque-a dentro do array de carrinho. Invoque essa função passando os três objetos criados. 
 
-let idadeMeses = (idade * 12)
-console.log(idadeMeses)
-
-let idadeDias = (idade * 365)
-console.log(idadeDias)
-
-let idadeHoras = (idade * 8760)
-console.log(idadeHoras)*/
-
-//4 
-
-let numeros1 = Number(prompt("digite um numero",))
-console.log(numeros1)
-
-let numeros2 = Number(prompt("digite um outro numero"))
-console.log(numeros2)
-
-let nummaior = numeros1 > numeros2
-console.log(nummaior)
-
-let menor2 = numeros1 = numeros2
-console.log(menor2)
-
-let div1 = numeros1 | numeros2
-console.log(div1)
-
-let div2 = numeros2 | numeros1
-console.log(div2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function imprimirFrutas (fruta1, fruta2) {
+const carrinho = [imprimirFrutas]
+}
+console.log(`Carrinho: ${fruta1.nome}, ${fruta2.nome}, ${fruta3.nome}`)
