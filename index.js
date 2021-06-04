@@ -1,136 +1,77 @@
-// Exercicio 1
-
-const bool1 = true
-const bool2 = false
-const bool3 = !bool2
-
-//Primeiro comando
-
-let resultado = bool1 && bool2
-console.log("a.", resultado)
-
-//a = false, Para o operador && todos os boleanos devem ser verdadeiros
-
-//Segundo comando
-
-let resultado2 = bool1 && bool2 && bool3
-console.log("b.", resultado2)
-
-//b= false, Para o operador && todos os boleanos devem ser verdadeiros bool3 = !bool2 (boleano false)
-
-//Terceiro comando
-
-let resultado3 = !resultado2 && (bool1 || bool2)
-console.log("c.", resultado3)
-
-//c= true
-// let resultado3 = true && true C= true
-
-//Quarto comando (não entendi) D = INDEFINIDO????
-
-//Exercicio 2
-
-/*let primeiroNumero = prompt("digite um numero!")
-let segundoNumero = prompt("digite outro numero!")
-const soma = primeiroNumero + segundoNumero
-console.log(soma)*/
-
-//Solicitou que atribuisse valor numerico (já que estamos trabalhando com boleanos)
-
-//Exercicio 3
-
-//Usaria number antes do prompt para atribuir como valor.
-
-//Exercicios de escrita de código
-
-//1 a)Pergunte a idade do usuário = 25 anos
-
-let idadeDoUsuario = Number(prompt("Qual a sua idade?"))
-console.log(idadeDoUsuario)
-
-// b) Pergunte a idade do seu melhor amigo ou da sua melhor amiga = 26 anos
-
-let idadeMelhorAmiga = Number(prompt("Qual a idade da melhor amiga?"))
-console.log(idadeMelhorAmiga)
-
-//c) Imprima na console a seguinte mensagem: "Sua idade é maior do que a do seu melhor amigo?", seguido pela resposta (true ou false)
-
-let diferenca = idadeDoUsuario - idadeMelhorAmiga
-console.log(diferenca)
-
-let minhaIdadeEmaior = idadeDoUsuario > idadeMelhorAmiga
-console.log(minhaIdadeEmaior)
-
-// 25 - 26 = -1 (false)
-
-// 2 a) Peça ao usuário que insira um número par
-
-let numeroPar = Number(prompt("Insira um numero par"))
-console.log(numeroPar)
-
-//b) Imprima na console o resto da divisão desse número por 2
-
-const restoDaDivisao = numeroPar / 2
-console.log(restoDaDivisao)
-
-//c) Teste o programa com diversos números pares. Você notou um padrão? Escreva em um comentário de código.
-// Como não existe resto de divisão, informa o número do quociente.
-
-//d) O que acontece se o usuário inserir um número ímpar? Escreva em um comentário de código
-
-//O resultado vem com o resto da divisão
-
-//3 Faça um programa que pergunte ao usuário sua idade em anos. Depois, imprima no console
-//a) A idade do usuário em meses b) A idade do usuário em dias c) A idade do usuário em horas
-
-/*let idade = Number(prompt("Qual a sua idade?", "Exemplo 18 anos"))
-console.log = idade
-
-let idadeMeses = (idade * 12)
-console.log(idadeMeses)
-
-let idadeDias = (idade * 365)
-console.log(idadeDias)
-
-let idadeHoras = (idade * 8760)
-console.log(idadeHoras)*/
-
-//4 
-
-let numeros1 = Number(prompt("digite um numero",))
-console.log(numeros1)
-
-let numeros2 = Number(prompt("digite um outro numero"))
-console.log(numeros2)
-
-let nummaior = numeros1 > numeros2
-console.log(nummaior)
-
-let menor2 = numeros1 = numeros2
-console.log(menor2)
-
-let div1 = numeros1 | numeros2
-console.log(div1)
-
-let div2 = numeros2 | numeros1
-console.log(div2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//1)a) será impresso respectivamente console.log(10) console.log(50)
+//b) indefined
+
+//2)A) Tolowercase = transforma todas as  letras das strings em minuscula
+//b) console.log(eu.)   console.log(ii.)  console.log(iii.)
+
+
+//EXERCICIOS DE ESCRITA DE CÓDIGO
+
+//1A) A função não deve receber nenhum parâmetro e deve imprimir uma mensagem falando algumas informações sobre você, como: 
+//"Eu sou Caio, tenho 23 anos, moro em São Paulo e sou estudante."
+ 
+const dados = {
+nome: "Nathalia",
+idade: 25,
+moro: "Belo Horizonte",
+sou: "estudante",
+}
+console.log(`Eu sou ${dados.nome}, tenho ${dados.idade} anos, moro em ${dados.moro} e sou ${dados.sou}`)
+
+
+//B)  Agora escreva uma função que receba 4 parâmetros que correspondem às informações de uma pessoa: 
+//o nome (string), a idade (number), a cidade (string) e uma profissão (string). 
+//Ela deve retornar uma string que unifique todas as informações da pessoa em uma só mensagem com o template:
+// Eu sou[nome], tenho [anos], moro em [endereço] e sou [profissão].
+
+const nome = prompt("Digite seu nome")
+const idade = prompt("Digite sua idade")
+const cidade = prompt("Digite sua cidade")
+const profissao = prompt("Digite sua profissão")
+function imprimirDados(nome, idade, cidade, profissao){
+}
+console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}.`)
+
+//2 a) Escreva uma função que receba 2 números como parâmetros, e, dentro da função, 
+//faça a soma das duas entradas e retorne o resultado. Invoque a função e imprima no console o resultado.
+
+const num1 = Number(prompt("Digite um número"))
+const num2 = Number(prompt("Digite outro número"))
+function imprimirSoma(num1, num2){
+}
+console.log(num1 + num2)
+
+//2B) Faça uma função que recebe 2 números e retorne um booleano que informa se o primeiro número é maior ou igual ao segundo.
+
+const num1 = Number(prompt("Digite um número"))
+const num2 = Number(prompt("Digite outro número"))
+function imprimirMaiorOuIgual(num1, num2){
+}
+console.log(num1 >= num2)
+
+//2C)Escreva uma função que receba um número e devolva um booleano indicando se ele é par ou não
+
+// NÃO CONSEGUI FAZER
+
+//2D)Faça uma função que recebe uma mensagem (string) como parâmetro e imprima o tamanho dessa mensagem, 
+//juntamente com uma versão dela em letras maiúsculas.
+
+const fruta = prompt("Digite uma fruta")
+function imprimirFruta(fruta) {   
+}
+console.log(fruta.length)
+console.log(fruta.toUpperCase())
+
+//3) Crie uma função para cada uma das operações básicas (soma, subtração, multiplicação e divisão). Em seguida, 
+//peça para o usuário inserir dois números e chame essas 4 funções com esses valores inputados pelo usuário sendo o argumento. 
+//Por fim, mostre no console o resultado das operações:
+
+const num1 = Number(prompt("digite um número"))
+const num2 = Number(prompt("digite outro número"))
+function imprimirNumeros(num1, num2) {   
+}
+console.log(`Números inseridos: ${num1} e ${num2}`)
+console.log("Soma:", num1 + num2)
+console.log("Diferença:", num1 !== num2)
+console.log("Multiplicação:", num1 * num2)
+console.log("Divisão:", num1 / num2)
