@@ -1,136 +1,81 @@
-// Exercicio 1
+//                                                           EXERCICIOS DE INTERPRETAÇÃO DE CÓDIGO
 
-const bool1 = true
-const bool2 = false
-const bool3 = !bool2
 
-//Primeiro comando
+//1A) Se o resto da divisão do número informado pelo usuario for = 0 "passou no teste" se não for = 0 "não passou no teste"
 
-let resultado = bool1 && bool2
-console.log("a.", resultado)
+//1B) numeros em que divididos por 2 o resto da divisão seja = 0
 
-//a = false, Para o operador && todos os boleanos devem ser verdadeiros
+//1c) numeros em que divididos por 2 o resto da divisão é diferente de 0
 
-//Segundo comando
 
-let resultado2 = bool1 && bool2 && bool3
-console.log("b.", resultado2)
+//2A) Para informar o preço das frutas conforme o perguntado pelo usuario
 
-//b= false, Para o operador && todos os boleanos devem ser verdadeiros bool3 = !bool2 (boleano false)
+//2B) console.log = O preço da fruta, Maça é R$, 2,25
 
-//Terceiro comando
+//2C) indefined ou default
 
-let resultado3 = !resultado2 && (bool1 || bool2)
-console.log("c.", resultado3)
 
-//c= true
-// let resultado3 = true && true C= true
+//3A) solicita ao usuario um número
 
-//Quarto comando (não entendi) D = INDEFINIDO????
+//3B) Para os dois: Essa mensagem é secreta.
 
-//Exercicio 2
+//3C) Sim, porque quando se utiliza if para todo if deverá existir um else.
 
-/*let primeiroNumero = prompt("digite um numero!")
-let segundoNumero = prompt("digite outro numero!")
-const soma = primeiroNumero + segundoNumero
-console.log(soma)*/
 
-//Solicitou que atribuisse valor numerico (já que estamos trabalhando com boleanos)
 
-//Exercicio 3
 
-//Usaria number antes do prompt para atribuir como valor.
+//                                                           EXERCICIOS DE ESCRITA DE CÓDIGO
 
-//Exercicios de escrita de código
+//1A)B)C)
 
-//1 a)Pergunte a idade do usuário = 25 anos
 
-let idadeDoUsuario = Number(prompt("Qual a sua idade?"))
-console.log(idadeDoUsuario)
+const podeDirigir = prompt("Pode dirigir?")
+const idade = Number(prompt("Digite sua idade"))
+if (idade >= 18) {
+    console.log("Você pode dirigir")
+}
+else {
+    console.log("Você não pode dirigir")
+}
 
-// b) Pergunte a idade do seu melhor amigo ou da sua melhor amiga = 26 anos
+//2)
 
-let idadeMelhorAmiga = Number(prompt("Qual a idade da melhor amiga?"))
-console.log(idadeMelhorAmiga)
+const turnoDeEstudo = prompt("Qual turno do dia você estuda? digite M se for matutino, V se for vespertino ou N para noturno")
+if (turnoDeEstudo === "M") {
+    console.log("Bom dia")
+}
+else if (turnoDeEstudo === "V") {
+    console.log("Boa tarde")
+}
+else {
+    console.log("Boa noite") 
+}
 
-//c) Imprima na console a seguinte mensagem: "Sua idade é maior do que a do seu melhor amigo?", seguido pela resposta (true ou false)
+//3)
 
-let diferenca = idadeDoUsuario - idadeMelhorAmiga
-console.log(diferenca)
+const turnoDeEstudo = prompt("Qual turno do dia você estuda? digite M se for matutino, V se for vespertino ou N para noturno")
+switch (turnoDeEstudo) {
+  case 'M':
+  console.log("Bom dia")
+}
+switch (turnoDeEstudo) {
+    case 'V':
+    console.log("Boa tarde")
+  }
+  switch (turnoDeEstudo) {
+    case 'N':
+    console.log("Boa noite")
+  }
 
-let minhaIdadeEmaior = idadeDoUsuario > idadeMelhorAmiga
-console.log(minhaIdadeEmaior)
-
-// 25 - 26 = -1 (false)
-
-// 2 a) Peça ao usuário que insira um número par
-
-let numeroPar = Number(prompt("Insira um numero par"))
-console.log(numeroPar)
-
-//b) Imprima na console o resto da divisão desse número por 2
-
-const restoDaDivisao = numeroPar / 2
-console.log(restoDaDivisao)
-
-//c) Teste o programa com diversos números pares. Você notou um padrão? Escreva em um comentário de código.
-// Como não existe resto de divisão, informa o número do quociente.
-
-//d) O que acontece se o usuário inserir um número ímpar? Escreva em um comentário de código
-
-//O resultado vem com o resto da divisão
-
-//3 Faça um programa que pergunte ao usuário sua idade em anos. Depois, imprima no console
-//a) A idade do usuário em meses b) A idade do usuário em dias c) A idade do usuário em horas
-
-/*let idade = Number(prompt("Qual a sua idade?", "Exemplo 18 anos"))
-console.log = idade
-
-let idadeMeses = (idade * 12)
-console.log(idadeMeses)
-
-let idadeDias = (idade * 365)
-console.log(idadeDias)
-
-let idadeHoras = (idade * 8760)
-console.log(idadeHoras)*/
-
-//4 
-
-let numeros1 = Number(prompt("digite um numero",))
-console.log(numeros1)
-
-let numeros2 = Number(prompt("digite um outro numero"))
-console.log(numeros2)
-
-let nummaior = numeros1 > numeros2
-console.log(nummaior)
-
-let menor2 = numeros1 = numeros2
-console.log(menor2)
-
-let div1 = numeros1 | numeros2
-console.log(div1)
-
-let div2 = numeros2 | numeros1
-console.log(div2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ //4)
+ 
+ const generoDoFilme = prompt("Qual o gênero do filme?")
+ const precoDoIngresso = Number(prompt("Qual o preço do ingresso?"))
+ if (generoDoFilme === "fantasia") {
+     console.log("Bom filme!")
+ }
+ else if (precoDoIngresso < 15,00)
+     console.log("Bom filme!")
+ else {
+     console.log("Escolha outro filme!")
+ }
