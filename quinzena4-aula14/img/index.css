@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+display: flex;
+flex-direction: column;
+height: 100vh;
+}
+
+
+
+header {
+    background-color: mediumvioletred;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+img {
+    width: 20px;
+}
+
+grid-produtos {
+    width: 20px;
+}
+
+h2 {
+    display: flex;
+    
+}
+
+footer {
+    background-color: mediumvioletred;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    background-color: #f2d0e0;
+    display: grid;
+    width: 200px;
+    grid-template-columns: 100px 300px;
+    grid-template-rows: 200px 550px;
+}
