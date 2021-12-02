@@ -32,7 +32,7 @@ class PlaylistCreationPage extends React.Component {
                 <PlaylistCreationForm>
                   <label>Nova playlist</label>
                   <input placeholder="Nome da playlist" />
-                   <button>Cadastrar playlist</button>
+                   <button type="submit">Cadastrar playlist</button>
                 </PlaylistCreationForm>
             </PlaylistCreationFormContainer>
         )
