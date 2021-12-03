@@ -1,0 +1,9 @@
+.page-informações-container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.page-informações-container > img {
+    width: 40px;
+}
