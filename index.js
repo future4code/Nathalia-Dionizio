@@ -1,81 +1,137 @@
-//                                                           EXERCICIOS DE INTERPRETAÇÃO DE CÓDIGO
+// Exercícios de interpretação de código
+
+//1) nome e apelido de cada um.
+
+//2) um novo array em cima do array A
+
+//3) léticia Chijo
 
 
-//1A) Se o resto da divisão do número informado pelo usuario for = 0 "passou no teste" se não for = 0 "não passou no teste"
-
-//1B) numeros em que divididos por 2 o resto da divisão seja = 0
-
-//1c) numeros em que divididos por 2 o resto da divisão é diferente de 0
+// EXERCICIOS DE ESCRITA DE CÓDIGO
 
 
-//2A) Para informar o preço das frutas conforme o perguntado pelo usuario
+//1)
 
-//2B) console.log = O preço da fruta, Maça é R$, 2,25
-
-//2C) indefined ou default
-
-
-//3A) solicita ao usuario um número
-
-//3B) Para os dois: Essa mensagem é secreta.
-
-//3C) Sim, porque quando se utiliza if para todo if deverá existir um else.
+const pets = [{nome : "Lupin", raca : "salsicha"}, {nome : "Polly", raca : "Lhasa Apso"}, {nome : "Madame", raca : "Poodle"}, {nome : "Quentinho", raca : "salsicha"}, {nome : "Fluffy", raca : "Poodle"}, {nome : "caramelo", raca : "Vira-lata"}, ]
+console.log(pets)
 
 
+//A) 
 
-
-//                                                           EXERCICIOS DE ESCRITA DE CÓDIGO
-
-//1A)B)C)
-
-
-const podeDirigir = prompt("Pode dirigir?")
-const idade = Number(prompt("Digite sua idade"))
-if (idade >= 18) {
-    console.log("Você pode dirigir")
+const filtrarNomeDosDogs = (pets) => {
+    return pets.nome
 }
-else {
-    console.log("Você não pode dirigir")
-}
+
+const dogsFiltrados = pets.filter(filtrarNomeDosDogs)
+console.log(filtrarNomeDosDogs)
+
+const nomesDogsFiltrados = dogsFiltrados.map((pets) => {
+    return pets.nome
+})
+console.log(nomesDogsFiltrados)
+
+//B)
+
+const filtrarRacaDosDogs = (pets) => {
+    return pets.raca === "salsicha"
+  }
+  
+  const racaFiltrada = pets.filter(filtrarRacaDosDogs)
+  console.log(filtrarRacaDosDogs)
+  
+  const racaDogsFiltrados = racaFiltrada.map((pets) => {
+     return pets.raca
+  })
+  console.log(racaDogsFiltrados)
+
+//C
+
+const filtrarRacaDosDogs = (pets) => {
+    return pets.raca === "Poodle"
+  }
+  
+  const racaFiltrada = pets.filter(filtrarRacaDosDogs)
+  console.log(filtrarRacaDosDogs)
+  
+  const racaDogsFiltrados = racaFiltrada.map((pets) => {
+     return pets.nome
+  })
+  console.log(`Você ganhou um cupom de desconto de 10% para tosar o/a`, racaDogsFiltrados)
+
 
 //2)
 
-const turnoDeEstudo = prompt("Qual turno do dia você estuda? digite M se for matutino, V se for vespertino ou N para noturno")
-if (turnoDeEstudo === "M") {
-    console.log("Bom dia")
-}
-else if (turnoDeEstudo === "V") {
-    console.log("Boa tarde")
-}
-else {
-    console.log("Boa noite") 
-}
 
-//3)
+const produtos = [
+    { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
+    { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
+    { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
+    { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
+    { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
+    { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
+    { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
+    { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
+    { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
+    { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
+ ]
 
-const turnoDeEstudo = prompt("Qual turno do dia você estuda? digite M se for matutino, V se for vespertino ou N para noturno")
-switch (turnoDeEstudo) {
-  case 'M':
-  console.log("Bom dia")
-}
-switch (turnoDeEstudo) {
-    case 'V':
-    console.log("Boa tarde")
+ //A)
+
+const filtrarNomeDeCadaItem = (produtos) => {
+    return produtos.nome
   }
-  switch (turnoDeEstudo) {
-    case 'N':
-    console.log("Boa noite")
-  }
+  
+  const nomeItensFiltrar = produtos.filter(filtrarNomeDeCadaItem)
+  console.log(nomeItensFiltrar)
+  
+  const nomeItensFiltrados = nomeItensFiltrar.map((produtos) => {
+     return produtos.nome
+  })
+  console.log(nomeItensFiltrados)
 
- //4)
- 
- const generoDoFilme = prompt("Qual o gênero do filme?")
- const precoDoIngresso = Number(prompt("Qual o preço do ingresso?"))
- if (generoDoFilme === "fantasia") {
-     console.log("Bom filme!")
- }
- else if (precoDoIngresso < 15,00)
-     console.log("Bom filme!")
- else {
-     console.log("Escolha outro filme!")
- }
+//B)
+
+//const filtrarNomePreco = (produtos) => {
+  //  return produtos.preco === nome                                                  /// (((DUVIDAAAAAA)))
+//}
+
+//const precoFiltrado = produtos.filter(filtrarNomePreco)
+//console.log(precoFiltrado)
+
+//const nomePrecoFiltrados = precoFiltrado.map((produtos) => {
+  //  return produtos.nome
+//})
+//console.log(nomePrecoFiltrados)
+
+//C)
+
+const filtrarNomeBebidas = (produtos) => {
+  return produtos.categoria === "Bebidas"
+}
+  
+const nomeBebidasFiltrar = produtos.filter(filtrarNomeBebidas)
+  console.log(nomeBebidasFiltrar)                                        
+  
+  const nomeBebidasFiltradas = nomeBebidasFiltrar.map((produtos) => {
+  return produtos.nome
+  })
+  console.log(nomeBebidasFiltradas)
+
+//D)
+
+//const filtrarNomeYpe = (produtos) => {
+  //  return produtos.nome === "Ypê"
+  //}
+  
+  //const nomeYpeFiltrar = produtos.filter(filtrarNomeYpe)                           /// (((DUVIDAAAAAA)))
+  //console.log(filtrarNomeYpe)
+  
+ // const nomeYpeFiltradas = nomeYpeFiltrar.map((produtos) => {
+  //return produtos.nome
+ // })
+  //console.log(nomeYpeFiltradas)
+
+
+//E)    /// (((DUVIDAAAAAA)))
+
+
