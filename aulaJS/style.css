@@ -1,0 +1,15 @@
+h1 {
+    color:darkcyan;
+}
+
+body {
+    background-color:darkgray;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    border-radius: 10px;
+    border-color: darkmagenta;
+}
+
